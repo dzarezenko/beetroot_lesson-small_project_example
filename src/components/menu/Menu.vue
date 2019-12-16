@@ -1,11 +1,13 @@
 <template>
   <nav>
-    <a v-for="(menuItem, key) in menu"
-       :key="key" :href="menuItem.url" class="scroll">{{ menuItem.title }}</a>
+    <menu-item v-for="(item, key) in menu" :key="key"
+      :url="item.url" :title="item.title" />
   </nav>
 </template>
 
 <script>
+import MenuItem from "@/components/menu/MenuItem";
+
 export default {
   data() {
     return {
@@ -14,9 +16,11 @@ export default {
         { title: "PROJECTS", url: "#gallery" },
         { title: "NEWS", url: "#news" },
         { title: "CONTACT", url: "#contact" },
-        { title: "TEST", url: "#test" },
       ]
     }
-  }
+  },
+  components: {
+    'menu-item': MenuItem,
+  },
 }
 </script>
