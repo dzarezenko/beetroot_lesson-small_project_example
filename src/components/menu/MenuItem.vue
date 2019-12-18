@@ -5,7 +5,10 @@
 <script>
 export default {
   props: {
-    url: String,
+    url: {
+      type: String,
+      default: "",
+    },
     title: String,
   }
 }
