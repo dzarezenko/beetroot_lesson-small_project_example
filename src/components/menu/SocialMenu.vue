@@ -1,7 +1,32 @@
 <template>
   <div class="socialMenu">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a v-for="(menuItem, index) in socialMenuItems"
+      :key="index" :href="menuItem.url">
+      <i class="fab" :class="menuItem.iconClassName"></i>
+    </a>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      socialMenuItems: [
+        {
+          url: "#facebook",
+          iconClassName: "fa-facebook-f"
+        },
+        {
+          url: "#twitter",
+          iconClassName: "fa-twitter"
+        },
+        {
+          url: "#instagram",
+          iconClassName: "fa-instagram"
+        },
+        
+      ],
+    }
+  },
+}
+</script>
