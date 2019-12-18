@@ -5,12 +5,9 @@
           <div id="logo"><img src="images/Logo.png" alt="logo" /></div>
 
           <main-menu />
-          
-          <div class="socialMenu">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
+
+          <social-menu />
+
         </header>
         <div id="mainSlider">
           <div
@@ -50,10 +47,12 @@
 
 <script>
 import Menu from "@/components/menu/Menu";
+import SocialMenu from "@/components/menu/SocialMenu";
 
 export default {
   components: {
     'main-menu': Menu,
+    'social-menu': SocialMenu,
   }
 }
 </script>
