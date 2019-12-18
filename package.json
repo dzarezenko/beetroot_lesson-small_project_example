@@ -5,11 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-
     "deploy": "rm -rf dist/ && npm run build"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-web-storage": "^4.0.0"
   },
   "devDependencies": {
     "@vue/cli-service": "^4.1.0",

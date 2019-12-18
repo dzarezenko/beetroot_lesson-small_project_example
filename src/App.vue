@@ -53,6 +53,10 @@ export default {
   components: {
     'main-menu': Menu,
     'social-menu': SocialMenu,
-  }
+  },
+  mounted() {
+    console.log(this);
+    this.$localStorage.set('someName', "someValue");
+  },
 }
 </script>
