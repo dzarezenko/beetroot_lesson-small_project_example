@@ -1,0 +1,26 @@
+{
+  "mainMenu": [
+    { "title": "ABOUT US", "url": "#whatWeDo" },
+    { "title": "PROJECTS", "url": "#gallery" },
+    { "title": "NEWS", "url": "#news" },
+    { "title": "CONTACT", "url": "#contact" }
+  ],
+  "socialMenu": [
+    {
+      "url": "#facebook",
+      "iconClassName": "fa-facebook-f"
+    },
+    {
+      "url": "#twitter",
+      "iconClassName": "fa-twitter"
+    },
+    {
+      "url": "#instagram",
+      "iconClassName": "fa-instagram"
+    },
+    {
+      "url": "#linkedin",
+      "iconClassName": "fa-linkedin"
+    }
+  ]
+}

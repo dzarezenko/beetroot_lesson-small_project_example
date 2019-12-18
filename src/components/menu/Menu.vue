@@ -7,16 +7,12 @@
 
 <script>
 import MenuItem from "@/components/menu/MenuItem";
+import Config from "@/assets/js/config.json";
 
 export default {
   data() {
     return {
-      menu: [
-        { title: "ABOUT US", url: "#whatWeDo" },
-        { title: "PROJECTS", url: "#gallery" },
-        { title: "NEWS", url: "#news" },
-        { title: "CONTACT", url: "#contact" },
-      ]
+      menu: Config.mainMenu,
     }
   },
   components: {

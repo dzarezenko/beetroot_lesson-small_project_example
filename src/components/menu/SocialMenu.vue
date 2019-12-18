@@ -1,6 +1,6 @@
 <template>
   <div class="socialMenu">
-    <a v-for="(menuItem, index) in socialMenuItems"
+    <a v-for="(menuItem, index) in Config.socialMenu"
       :key="index" :href="menuItem.url">
       <i :class="['fab', menuItem.iconClassName]"></i>
     </a>
@@ -8,27 +8,12 @@
 </template>
 
 <script>
+import Config from "@/assets/js/config.json";
+
 export default {
   data() {
     return {
-      socialMenuItems: [
-        {
-          url: "#facebook",
-          iconClassName: "fa-facebook-f"
-        },
-        {
-          url: "#twitter",
-          iconClassName: "fa-twitter"
-        },
-        {
-          url: "#instagram",
-          iconClassName: "fa-instagram"
-        },
-        {
-          url: "#linkedin",
-          iconClassName: "fa-linkedin"
-        },
-      ],
+      Config,
     }
   },
 }
