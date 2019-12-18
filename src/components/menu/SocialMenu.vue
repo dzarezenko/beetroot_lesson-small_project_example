@@ -24,7 +24,10 @@ export default {
           url: "#instagram",
           iconClassName: "fa-instagram"
         },
-        
+        {
+          url: "#linkedin",
+          iconClassName: "fa-linkedin"
+        },
       ],
     }
   },
