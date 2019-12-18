@@ -2,7 +2,7 @@
   <div class="socialMenu">
     <a v-for="(menuItem, index) in socialMenuItems"
       :key="index" :href="menuItem.url">
-      <i :class="{ fab: true, [menuItem.iconClassName]: true }"></i>
+      <i :class="['fab', menuItem.iconClassName]"></i>
     </a>
   </div>
 </template>
